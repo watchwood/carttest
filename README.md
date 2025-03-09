@@ -49,7 +49,7 @@ There is a live demo available at https://carttest.johnathonwood.com
 * `php artisan migrate --seed`
 * `php artisan optimize:clear`
 
-## Relevant Files
+## Relevant Code Files
  
 * resources/views/home.blade.php
 * public/main.css
