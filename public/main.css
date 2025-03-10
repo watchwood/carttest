@@ -1,3 +1,6 @@
+
+/* Didn't use a CSS compiler because I didn't think the gains would justify the setup time.  The hosting package I use for my live demos is finicky about Node. */
+
 body {
 	background-color: #eee;
 	margin: 0;
@@ -31,11 +34,11 @@ table.cart {
 table.cart tr {
 	border-top: solid 1px grey;
 }
+
 table.cart td {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
-
 
 button {
 	border: none;
@@ -44,7 +47,6 @@ button {
 	color: white;
 	font-size: 1.5em;
 }
-
 
 .cartItem {
 	font-size: 1.5em;
@@ -65,8 +67,8 @@ button {
 	padding: 0em;
 	text-align: center;
 	vertical-align:middle;
-
 }
+
 .cartAmount input{
 	border: #025710 solid 2px;
 	width: 75px;
@@ -75,7 +77,6 @@ button {
 	font-size: 1.25em;
 	text-align: center;
 	vertical-align:middle;
-
 }
 
 .checkout {
@@ -83,6 +84,7 @@ button {
 	margin-top: 1em;
 	text-align: right;
 }
-.checkout *{
+
+.checkout * {
 	margin-top: 1em;
 }
