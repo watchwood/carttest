@@ -17,6 +17,8 @@
 			<nav>Nav Menu Placeholder</nav>
 		</header>
 
+		<!--  I would typically build the Vue code as a separate .vue file, but the complexity isn't needed for this project -->
+
 		<main id="app">
         	<h1>Shopping Cart Test</h1>
 			<table class="cart">
@@ -31,7 +33,6 @@
 						<button @click="addItem(item)">+</button>
 					</td>
 				</tr>
-
 			</table>
 
 			<section class="checkout">
@@ -47,7 +48,7 @@
 
 	<script>
 		const { createApp, ref } = Vue
-		const userId = "{{$userId}}";
+		const userId = "{{$userId}}";  //This is outside the Vue data bindings because it is not needed by the Vue template
 		createApp({
 			data() {
 				return {
@@ -74,22 +75,18 @@
 					return sum = Math.round((this.subtotal + this.qst + this.gst) * 100) / 100;
 				},
 			},
-			
 			methods: {
 				addItem(item) {
 					item.amount++;
 					this.itemCall(item);
 				},
-
 				subItem(item) {
 					item.amount--;
 					this.itemCall(item);
 				},
-
 				updateItem(item) {
 					this.itemCall(item);
 				},
-
 				async itemCall(item) {
 					try {
 						const {data} = await axios.get('/api/setItem?userId='+userId+'&id='+item.id+'&amount='+item.amount);

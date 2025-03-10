@@ -19,7 +19,7 @@ class Item extends Model
         'price',
     ];
 
-	
+	// This connects the Eloquent model relationships
 	public function cartItems() {
         return $this->hasMany(CartItem::class);
     }

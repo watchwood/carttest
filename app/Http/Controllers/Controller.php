@@ -28,6 +28,7 @@ class Controller extends BaseController
 			}
 		}
 
+		//render the home page with the data it needs
 		return view('home',  [
 			"items" => CartItem::with("item")->where("user_id", $userId)->get()->toArray(),
 			"userId" => $request->session()->getId()
