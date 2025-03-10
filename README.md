@@ -58,4 +58,8 @@ There is a live demo available at https://carttest.johnathonwood.com
 * app/Models/CartItem.php
 * app/Models/Item.php
 
-Laravel's default bootstrap code was largely left in place.
+## Other Notes
+
+* The project was written using Laravel, Vue, and Axios  
+* VSCode was used as the IDE, and local development was done with a Laravel Homestead VN.  
+* Laravel's default bootstrapping code (NOT Bootstrap the front end tools, to be clear) was largely left in place.
